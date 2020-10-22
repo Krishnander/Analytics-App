@@ -1,0 +1,10 @@
+#defaults
+spring.cloud.stream.binder.configuration:
+                                        commit.interval.mms=100
+                                        default.key.serde=org.apache.kafka.common.serialization.Serde$StringSerde
+                                        default.value.serde=org.apache.kafka.common.serialization.Serde$StringSerde
+                                        
+#Page Views Out
+spring.cloud.stream.bindings.PageViewsOut:
+                                         destination=pvs
+                                         producer.headerMode=none
